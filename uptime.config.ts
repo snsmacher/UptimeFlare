@@ -37,7 +37,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://blog.septa.dpdns.org/mcp',
       tooltip: '博客 MCP API 端点',
       statusPageLink: 'https://blog.septa.dpdns.org/mcp',
-      expectedCodes: [405],
+      expectedCodes: [401],
       timeout: 10000,
     },
   ],
