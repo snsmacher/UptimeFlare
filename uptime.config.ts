@@ -18,10 +18,10 @@ const workerConfig: WorkerConfig = {
     // Blog HTTP monitor
     {
       id: 'blog_monitor',
-      name: '博客 escsn',
+      name: 'My blog',
       method: 'GET',
       target: 'https://blog.septa.dpdns.org/',
-      tooltip: '我的博客（flare-stack-blog）',
+      tooltip: '我的博客',
       statusPageLink: 'https://blog.septa.dpdns.org/',
       expectedCodes: [200],
       timeout: 10000,
