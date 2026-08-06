@@ -39,7 +39,8 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://blog.septa.dpdns.org/mcp',
       expectedCodes: [401],
       timeout: 10000,
-     // test
+    },
+    // test webhook
     {
       id: 'blog_test',
       name: 'test',
@@ -49,7 +50,6 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://blog.septa.dpdns.org',
       expectedCodes: [401],
       timeout: 10000,
-
     },
   ],
   // [Optional] Notification settings
@@ -61,7 +61,7 @@ const workerConfig: WorkerConfig = {
         'Content-Type': 'application/json',
       },
       payloadType: 'json',
-  payload: {
+      payload: {
         subject: ' UptimeFlare 告警',
         message: '$MSG',
       },
@@ -76,4 +76,3 @@ const maintenances: MaintenanceConfig[] = []
 
 // Don't edit this line
 export { maintenances, pageConfig, workerConfig }
-
