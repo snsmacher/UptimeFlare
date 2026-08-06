@@ -1,3 +1,4 @@
+
 // UptimeFlare config - escsn status page
 // Don't edit this line
 import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
@@ -40,17 +41,6 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [401],
       timeout: 10000,
     },
-    // test webhook
-    {
-      id: 'blog_test',
-      name: 'test',
-      method: 'GET',
-      target: 'https://blog.septa.dpdns.org/',
-      tooltip: 'test',
-      statusPageLink: 'https://blog.septa.dpdns.org',
-      expectedCodes: [401],
-      timeout: 10000,
-    },
   ],
   // [Optional] Notification settings
   notification: {
@@ -61,7 +51,7 @@ const workerConfig: WorkerConfig = {
         'Content-Type': 'application/json',
       },
       payloadType: 'json',
-      payload: {
+  payload: {
         subject: ' UptimeFlare 告警',
         message: '$MSG',
       },
