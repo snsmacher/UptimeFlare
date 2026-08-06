@@ -1,4 +1,3 @@
-
 // UptimeFlare config - escsn status page
 // Don't edit this line
 import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
@@ -45,15 +44,14 @@ const workerConfig: WorkerConfig = {
   // [Optional] Notification settings
   notification: {
     webhook: {
-      url: 'https://web.snean.workers.dev/webhook',
+      url: 'https://your-webhook-url-here',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       payloadType: 'json',
-  payload: {
-        subject: ' UptimeFlare 告警',
-        message: '$MSG',
+      payload: {
+        text: '$MSG',
       },
       timeout: 10000,
     },
