@@ -44,14 +44,15 @@ const workerConfig: WorkerConfig = {
   // [Optional] Notification settings
   notification: {
     webhook: {
-      url: 'https://your-webhook-url-here',
+      url: 'https://web.snean.workers.dev/webhook',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       payloadType: 'json',
-      payload: {
-        text: '$MSG',
+  payload: {
+        subject: ' UptimeFlare 告警',
+        message: '$MSG',
       },
       timeout: 10000,
     },
